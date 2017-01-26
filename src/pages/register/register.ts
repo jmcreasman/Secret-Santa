@@ -8,11 +8,14 @@ import { AuthService } from '../../providers/auth-service';
 })
 export class RegisterPage {
   createSuccess = false;
-  registerCredentials = {email: '', password: ''};
+  registerCredentials = {username: '', password: '', confirmPassword: '', email: ''};
  
   constructor(private nav: NavController, private auth: AuthService, private alertCtrl: AlertController) {}
  
   public register() {
+    if (this.registerCredentials.password !== this.registerCredentials.confirmPassword) {
+      this.showPopup("Error", "Passwords did not match please try again.");
+    } else
     this.auth.register(this.registerCredentials).subscribe(success => {
       if (success) {
         this.createSuccess = true;
