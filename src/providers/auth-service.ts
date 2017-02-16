@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/observable/throw';
 
 export class User {
   name: string;
@@ -30,7 +31,7 @@ export class Account {
 @Injectable()
 export class AuthService {
   currentUser: User;
-  accounts: [Account];
+  accounts: Array<Account> = [];
 
   public login(credentials) {
     // Check for missing info
@@ -69,7 +70,7 @@ export class AuthService {
       if (existingAccount) {
         return Observable.throw("Account already exists");
       }
-      
+
       this.accounts.push(new Account(credentials.username, credentials.password, credentials.email));
 
       return Observable.create(observer => {
