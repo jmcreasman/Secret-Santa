@@ -31,7 +31,7 @@ export class Account {
 @Injectable()
 export class AuthService {
   currentUser: User;
-  accounts: Array<Account> = [];
+  accounts: Array<Account> = [new Account('abc', 'xyz', 'abc@mail.com')];
 
   public login(credentials) {
     // Check for missing info
