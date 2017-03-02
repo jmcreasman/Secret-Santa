@@ -11,6 +11,7 @@ import { RegisterPage } from '../pages/register/register';
 /* Service imports */
 import { AuthService } from '../providers/auth-service';
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -22,7 +23,7 @@ import { AuthService } from '../providers/auth-service';
     TabsPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
