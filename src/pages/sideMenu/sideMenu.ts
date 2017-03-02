@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
+
 import { NavController } from 'ionic-angular';
-import { Header } from '../header/header';
 
 @Component({
-  selector: 'page-about',
-  templateUrl: 'about.html'
+  selector: 'page-sidemenu',
+  templateUrl: 'sidemenu.html'
 })
-export class AboutPage {
+export class SideMenu {
 
   constructor(public navCtrl: NavController) {
 

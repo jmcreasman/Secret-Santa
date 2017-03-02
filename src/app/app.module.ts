@@ -8,6 +8,8 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';
 import { RegisterPage } from '../pages/register/register';
+import { SideMenu } from '../pages/sideMenu/sideMenu';
+import { Header } from '../pages/header/header';
 /* Service imports */
 import { AuthService } from '../providers/auth-service';
 
@@ -20,7 +22,9 @@ import { AuthService } from '../providers/auth-service';
     HomePage,
     LoginPage,
     RegisterPage,
-    TabsPage
+    TabsPage,
+    SideMenu,
+    Header,
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -33,7 +37,9 @@ import { AuthService } from '../providers/auth-service';
     HomePage,
     LoginPage,
     RegisterPage,
-    TabsPage
+    TabsPage,
+    SideMenu,
+    Header,
   ],
   providers: [AuthService,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
