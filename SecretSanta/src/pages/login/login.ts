@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController, LoadingController, Loading } from 'ionic-angular';
 import { AuthService } from '../../providers/auth-service';
-import { HelloIonicPage } from '../hello-ionic/hello-ionic';
+import { HomePage } from '../home/home';
 import { RegisterPage } from '../register/register';
 
 @Component({
@@ -26,7 +26,7 @@ export class LoginPage {
             if (allowed) {
                 setTimeout(() => {
                     this.loading.dismiss();
-                    this.nav.setRoot(HelloIonicPage)
+                    this.nav.setRoot(HomePage)
                 });
             } else {
                 this.showError("Access Denied");

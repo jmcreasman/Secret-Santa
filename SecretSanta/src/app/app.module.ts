@@ -2,7 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 /* Page imports */
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { HomePage } from '../pages/home/home';
 import { RegisterPage } from '../pages/register/register';
 import { LoginPage } from '../pages/login/login';
 import { AccountPage } from '../pages/account/account';
@@ -12,7 +12,7 @@ import { AuthService } from '../providers/auth-service';
 @NgModule({
   declarations: [
     MyApp,
-    HelloIonicPage,
+    HomePage,
     RegisterPage,
     LoginPage,
     AccountPage
@@ -23,7 +23,7 @@ import { AuthService } from '../providers/auth-service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HelloIonicPage,
+    HomePage,
     RegisterPage,
     LoginPage,
     AccountPage
