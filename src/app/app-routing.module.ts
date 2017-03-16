@@ -1,0 +1,1 @@
+// http://blog.ng-book.com/basic-routing-in-angular-2/ for guide to setting up
