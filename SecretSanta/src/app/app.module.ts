@@ -6,6 +6,7 @@ import { HomePage } from '../pages/home/home';
 import { RegisterPage } from '../pages/register/register';
 import { LoginPage } from '../pages/login/login';
 import { AccountPage } from '../pages/account/account';
+import { CreateDrawlingPage } from '../pages/create-drawling/create-drawling';
 /* Service imports */
 import { AuthService } from '../providers/auth-service';
 
@@ -15,7 +16,8 @@ import { AuthService } from '../providers/auth-service';
     HomePage,
     RegisterPage,
     LoginPage,
-    AccountPage
+    AccountPage,
+    CreateDrawlingPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -26,7 +28,8 @@ import { AuthService } from '../providers/auth-service';
     HomePage,
     RegisterPage,
     LoginPage,
-    AccountPage
+    AccountPage,
+    CreateDrawlingPage
   ],
   providers: [AuthService,
     { provide: ErrorHandler, useClass: IonicErrorHandler }

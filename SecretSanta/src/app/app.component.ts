@@ -8,7 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { RegisterPage } from '../pages/register/register';
 import { LoginPage } from '../pages/login/login';
 import { AccountPage } from '../pages/account/account';
-
+import { CreateDrawlingPage } from '../pages/create-drawling/create-drawling';
 
 @Component({
   templateUrl: 'app.html'
@@ -30,6 +30,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'My Account', component: AccountPage },
+      { title: 'Create Drawling', component: CreateDrawlingPage },
     ];
   }
 
