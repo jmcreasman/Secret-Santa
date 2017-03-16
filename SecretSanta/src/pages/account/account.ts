@@ -7,7 +7,6 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'account.html'
 })
 export class AccountPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {

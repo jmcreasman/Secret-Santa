@@ -9,7 +9,13 @@
 
 
 <ion-content padding>
-
-  <h3>Welcome to your first Ionic app!</h3>
-
+  <ion-row class="logo-row">
+      <ion-col></ion-col>
+      <ion-col width-67>
+          <img src="./assets/images/SecretSanta.png" />
+      </ion-col>
+      <ion-col></ion-col>
+  </ion-row>
+  <button ion-button block color="danger" round >Create a drawling</button>
+  <button ion-button block color="secondary" round (click)="nextPage();">View Account</button>
 </ion-content>
