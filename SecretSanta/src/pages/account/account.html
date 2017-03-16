@@ -9,5 +9,18 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-list-header>
+      Profile Info
+    </ion-list-header>
+    <ion-item>TODO: email</ion-item>
+    <ion-item>TODO: password</ion-item>
+    <ion-item>TODO: email</ion-item>
+    <div *ngFor="let answeredQuestion of answeredQuestions">
+      <ion-list-header>
+        {{answeredQuestion.title}}
+      </ion-list-header>
+      <ion-item>{{answeredQuestion.answer}}</ion-item>
+    </div>
+  </ion-list>
 </ion-content>

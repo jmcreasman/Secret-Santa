@@ -14,4 +14,9 @@ export class AccountPage {
     console.log('ionViewDidLoad AccountPage');
   }
 
+  answeredQuestions = [
+    { title: 'Favorite Color', answer: 'Red' },
+    { title: 'Favorite Candy', answer: 'Nerds' },
+  ];
+
 }
