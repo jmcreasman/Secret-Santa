@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 
 import { AccountPage } from '../account/account';
 import { CreateDrawlingPage } from '../create-drawling/create-drawling';
+import { ViewDrawlingPage } from '../view-drawling/view-drawling';
 
 @Component({
   selector: 'page-home',
@@ -15,5 +16,8 @@ export class HomePage {
   }
   routeToCreateDrawlingPage() {
      this.navCtrl.push(CreateDrawlingPage);
+  }
+  routeToViewDrawlingPage() {
+     this.navCtrl.push(ViewDrawlingPage);
   }
 }
