@@ -10,6 +10,7 @@ import { LoginPage } from '../pages/login/login';
 import { AccountPage } from '../pages/account/account';
 import { CreateDrawlingPage } from '../pages/create-drawling/create-drawling';
 import { ViewDrawlingPage } from '../pages/view-drawling/view-drawling';
+import { InboxPage } from '../pages/inbox/inbox';
 
 @Component({
   templateUrl: 'app.html'
@@ -33,6 +34,7 @@ export class MyApp {
       { title: 'My Account', component: AccountPage },
       { title: 'Create Drawling', component: CreateDrawlingPage },
       { title: 'View your Drawlings', component: ViewDrawlingPage },
+      { title: 'My Inbox', component: InboxPage },
     ];
   }
 

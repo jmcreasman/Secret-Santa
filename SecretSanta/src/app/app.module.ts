@@ -8,6 +8,7 @@ import { LoginPage } from '../pages/login/login';
 import { AccountPage } from '../pages/account/account';
 import { CreateDrawlingPage } from '../pages/create-drawling/create-drawling';
 import { ViewDrawlingPage } from '../pages/view-drawling/view-drawling';
+import { InboxPage } from '../pages/inbox/inbox';
 /* Service imports */
 import { AuthService } from '../providers/auth-service';
 
@@ -19,7 +20,8 @@ import { AuthService } from '../providers/auth-service';
     LoginPage,
     AccountPage,
     CreateDrawlingPage,
-    ViewDrawlingPage
+    ViewDrawlingPage,
+    InboxPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -32,7 +34,8 @@ import { AuthService } from '../providers/auth-service';
     LoginPage,
     AccountPage,
     CreateDrawlingPage,
-    ViewDrawlingPage
+    ViewDrawlingPage,
+    InboxPage
   ],
   providers: [AuthService,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
