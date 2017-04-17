@@ -8,8 +8,8 @@ import { HomePage } from '../pages/home/home';
 import { RegisterPage } from '../pages/register/register';
 import { LoginPage } from '../pages/login/login';
 import { AccountPage } from '../pages/account/account';
-import { CreateDrawlingPage } from '../pages/create-drawling/create-drawling';
-import { ViewDrawlingPage } from '../pages/view-drawling/view-drawling';
+import { CreateDrawingPage } from '../pages/create-drawing/create-drawing';
+import { ViewDrawingPage } from '../pages/view-drawing/view-drawing';
 import { InboxPage } from '../pages/inbox/inbox';
 
 @Component({
@@ -32,8 +32,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'My Account', component: AccountPage },
-      { title: 'Create Drawling', component: CreateDrawlingPage },
-      { title: 'View your Drawlings', component: ViewDrawlingPage },
+      { title: 'Create Drawing', component: CreateDrawingPage },
+      { title: 'View your Drawings', component: ViewDrawingPage },
       { title: 'My Inbox', component: InboxPage },
     ];
   }

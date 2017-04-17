@@ -2,15 +2,15 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
-  selector: 'page-create-drawling',
-  templateUrl: 'create-drawling.html'
+  selector: 'page-create-drawing',
+  templateUrl: 'create-drawing.html'
 })
-export class CreateDrawlingPage {
+export class CreateDrawingPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CreateDrawlingPage');
+    console.log('ionViewDidLoad CreateDrawingPage');
   }
 
 }

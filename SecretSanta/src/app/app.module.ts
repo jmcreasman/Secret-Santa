@@ -6,8 +6,8 @@ import { HomePage } from '../pages/home/home';
 import { RegisterPage } from '../pages/register/register';
 import { LoginPage } from '../pages/login/login';
 import { AccountPage } from '../pages/account/account';
-import { CreateDrawlingPage } from '../pages/create-drawling/create-drawling';
-import { ViewDrawlingPage } from '../pages/view-drawling/view-drawling';
+import { CreateDrawingPage } from '../pages/create-drawing/create-drawing';
+import { ViewDrawingPage } from '../pages/view-drawing/view-drawing';
 import { InboxPage } from '../pages/inbox/inbox';
 /* Service imports */
 import { AuthService } from '../providers/auth-service';
@@ -19,8 +19,8 @@ import { AuthService } from '../providers/auth-service';
     RegisterPage,
     LoginPage,
     AccountPage,
-    CreateDrawlingPage,
-    ViewDrawlingPage,
+    CreateDrawingPage,
+    ViewDrawingPage,
     InboxPage
   ],
   imports: [
@@ -33,8 +33,8 @@ import { AuthService } from '../providers/auth-service';
     RegisterPage,
     LoginPage,
     AccountPage,
-    CreateDrawlingPage,
-    ViewDrawlingPage,
+    CreateDrawingPage,
+    ViewDrawingPage,
     InboxPage
   ],
   providers: [AuthService,

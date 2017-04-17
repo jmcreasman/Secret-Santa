@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { AccountPage } from '../account/account';
-import { CreateDrawlingPage } from '../create-drawling/create-drawling';
-import { ViewDrawlingPage } from '../view-drawling/view-drawling';
+import { CreateDrawingPage } from '../create-drawing/create-drawing';
+import { ViewDrawingPage } from '../view-drawing/view-drawing';
 
 @Component({
   selector: 'page-home',
@@ -14,10 +14,10 @@ export class HomePage {
   routeToAccountPage() {
      this.navCtrl.push(AccountPage);
   }
-  routeToCreateDrawlingPage() {
-     this.navCtrl.push(CreateDrawlingPage);
+  routeToCreateDrawingPage() {
+     this.navCtrl.push(CreateDrawingPage);
   }
-  routeToViewDrawlingPage() {
-     this.navCtrl.push(ViewDrawlingPage);
+  routeToViewDrawingPage() {
+     this.navCtrl.push(ViewDrawingPage);
   }
 }
