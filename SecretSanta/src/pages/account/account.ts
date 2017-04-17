@@ -12,6 +12,20 @@ export class AccountPage {
     console.log('ionViewDidLoad AccountPage');
   }
 
+  newFavoriteFormVisible = false;
+
+  openNewFavoriteForm() {
+    console.log('click');
+    this.newFavoriteFormVisible = true;
+  }
+
+  closeNewFavoriteForm() {
+    console.log(this.answeredQuestions)
+    this.newFavoriteFormVisible = false;
+  }
+
+  todo = {}
+
   answeredQuestions = [
     { title: 'Favorite Color', answer: 'Red' },
     { title: 'Favorite Candy', answer: 'Nerds' },

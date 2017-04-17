@@ -9,7 +9,7 @@
 
 
 <ion-content padding>
-  <ion-list>
+  <ion-list *ngIf="!newFavoriteFormVisible">
     <ion-list-header>
       Profile Info
     </ion-list-header>
@@ -23,4 +23,17 @@
       <ion-item>{{answeredQuestion.answer}}</ion-item>
     </div>
   </ion-list>
+  <form (ngSubmit)="closeNewFavoriteForm()" *ngIf="newFavoriteFormVisible">
+    <ion-item>
+      <ion-label>Title</ion-label>
+      <ion-input type="text" [(ngModel)]="answeredQuestions.title" name="title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Answer</ion-label>
+      <ion-input type="text" [(ngModel)]="answeredQuestions.answer" name="answer"></ion-input>
+    </ion-item>
+    <button ion-button block color="secondary" round type="submit">Add Favorite</button>
+    <button ion-button block color="danger" round>Cancel</button>
+  </form>
+  <button ion-button block color="secondary" round *ngIf="!newFavoriteFormVisible" (click)="openNewFavoriteForm();">Add a Favorite</button>
 </ion-content>
