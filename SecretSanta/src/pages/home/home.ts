@@ -10,7 +10,19 @@ import { ViewDrawingPage } from '../view-drawing/view-drawing';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+
+  drawings: Array<{title: string, component: any}>;
+
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams
+  ) {
+    this.drawings = [
+      { title: 'Test Drawing', component: AccountPage },
+      { title: 'My Inbox', component: CreateDrawingPage },
+    ]
+  }
+  
   routeToAccountPage() {
      this.navCtrl.push(AccountPage);
   }
@@ -19,5 +31,10 @@ export class HomePage {
   }
   routeToViewDrawingPage() {
      this.navCtrl.push(ViewDrawingPage);
+  }
+
+  openDrawing(drawing) {
+    // navigate to the new page if it is not the current page
+    this.navCtrl.setRoot(drawing.component);
   }
 }
