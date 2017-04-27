@@ -4,6 +4,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { AccountPage } from '../account/account';
 import { CreateDrawingPage } from '../create-drawing/create-drawing';
 import { ViewDrawingPage } from '../view-drawing/view-drawing';
+import { InboxPage } from '../inbox/inbox';
 
 @Component({
   selector: 'page-home',
@@ -18,8 +19,8 @@ export class HomePage {
     public navParams: NavParams
   ) {
     this.drawings = [
-      { title: 'Test Drawing', component: AccountPage },
-      { title: 'My Inbox', component: CreateDrawingPage },
+      { title: 'Test Drawing', component: ViewDrawingPage },
+      { title: 'My Inbox', component: InboxPage },
     ]
   }
   
