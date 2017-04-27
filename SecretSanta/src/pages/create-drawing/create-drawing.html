@@ -9,5 +9,18 @@
 
 
 <ion-content padding>
-
+  <button *ngIf="!fieldOptionsVisible" ion-button block (click)="showFieldOptions();">Add New Field</button>
+  <div *ngIf="fieldOptionsVisible">
+    <button ion-button block (click)="createParagraphField();">Add Paragraph Field</button>
+    <button ion-button block (click)="createInputField();">Add Input Field</button>
+    <button ion-button block (click)="createMultipleChoiceField();">Add Multiple Choice Field</button>
+    <button ion-button block (click)="createCheckboxField();">Add Checkbox Field</button>
+    <button ion-button block (click)="hideFieldOptions();">Cancel</button>
+  </div>
+  <form>
+    <ion-item *ngFor="let field of fields">
+      <ion-label>{{field.title}}</ion-label>
+      <div [innerHTML]="field"></div>
+    </ion-item>
+  </form>
 </ion-content>
